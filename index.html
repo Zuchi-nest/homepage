@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Homepage</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="hero">
+        <div class="weather">
+          <div class="card">
+            <div class="top-weather">
+              <p class="temp"></p>
+              <div class="weather-icon"></div>
+            </div>
+            <h1 class="name" id="name"></h1>
+          </div>
+        </div>
+        <div id="clock"></div>
+        <div class="greeting">
+          <label id="lblGreetings"></label>
+        </div>
+        <form
+          class="search"
+          target="_blank"
+          rel="noopener noreferrer"
+          action="https://www.google.com/search"
+        >
+          <input
+            type="text"
+            name="q"
+            class="search-txt"
+            onfocus="this.value=''"
+            placeholder="Search..."
+          />
+          <a onclick="this.parentElement.submit()" class="search-btn">
+            <i class="fa fa-circle"></i>
+          </a>
+        </form>
+        <div id="quote"></div>
+        <div class="shortcut">
+          <ul>
+            <li>
+              <a
+                href="https://www.fb.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa fa-facebook fa-1x fa-fw" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa fa-instagram fa-1x fa-fw" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i
+                  class="fa fa-youtube-play fa-1x fa-fw"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="http://www.tsag-agaar.gov.mn/forecast_cities"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i
+                  class="fa fa-thermometer-full fa-1x fa-fw"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./greeting.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./quote.js"></script>
+  <script src="./weather.js"></script>
+  <script src="./bckgrnd-image.js"></script>
+</html>
